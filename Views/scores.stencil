@@ -1,0 +1,10 @@
+<html>
+Total donated via twitter is: {{ donations }}<br />
+
+There are {{ donators.count }} unique donators. <br />
+This is all donators: {{ donators }}
+{% for singleDonator in donators %}
+        - key: {{ singleDonator }}. <br />
+        - Value: {{ donators.singleDonator }}. <br />
+{% endfor %}
+</html>
